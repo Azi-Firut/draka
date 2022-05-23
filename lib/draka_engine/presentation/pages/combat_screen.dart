@@ -1,24 +1,62 @@
 import 'package:draka/draka_engine/domain/entities/bot.dart';
 import 'package:draka/draka_engine/domain/entities/fighter.dart';
-import 'package:draka/draka_engine/presentation/pages/combat_screen.dart';
+import 'package:draka/draka_engine/presentation/widgets/fight_timer.dart';
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(const MyApp());
-}
+import '../widgets/health_row.dart';
 
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+class CombatScreen extends StatelessWidget {
+  const CombatScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: '',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: CombatScreen(),
-      //const MyHomePage(title: 'Flutter Demo Home Page'),
+    return Column(
+      children: [
+        SizedBox(
+          width: MediaQuery.of(context).size.width,
+          height: 80,
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              const Spacer(
+                flex: 1,
+              ),
+              Column(
+                children: const [
+                  Health(
+                    fighterHealth: 120.0,
+                    fighterMaxHealth: 120,
+                  )
+                ],
+              ),
+              const Spacer(
+                flex: 1,
+              ),
+              const FightTimer(timer: 30),
+              const Spacer(
+                flex: 1,
+              ),
+              Column(
+                children: const [
+                  Health(
+                    fighterHealth: 80.0,
+                    fighterMaxHealth: 160,
+                  ),
+                ],
+              ),
+              const Spacer(
+                flex: 1,
+              ),
+            ],
+          ),
+        ),
+        Container(
+          width: 400,
+          height: 400,
+          color: Colors.black12,
+        )
+      ],
     );
   }
 }
