@@ -1,0 +1,24 @@
+[ 
+   {
+    "name":"Knuckle",  
+    "image_inventory":"https://conteudo.imguol.com.br/c/entretenimento/ee/2021/04/16/apex-legends-1618603856219_v2_450x337.jpg",
+    "damage":4,
+    "chanceToCrit":10,
+    "chanceToMist":30,
+    "chanceToCounterAttack":1,
+    "chanceToDodge":7,
+    "armor":0,
+    "chanceToDoubleAttack":0
+  },
+   {
+    "name":"Knife",  
+    "image_inventory":"https://conteudo.imguol.com.br/c/entretenimento/ee/2021/04/16/apex-legends-1618603856219_v2_450x337.jpg",
+    "damage":4,
+    "chanceToCrit":30,
+    "chanceToMist":10,
+    "chanceToCounterAttack":2,
+    "chanceToDodge":5,
+    "armor":0,
+    "chanceToDoubleAttack":0
+  }
+]
