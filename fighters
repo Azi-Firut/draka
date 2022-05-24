@@ -17,7 +17,7 @@
     "legs":"nothing",
     "feets":"nothing" 
     },
-   {
+   {"Penumbra1":{
     "id":"1",
     "name":"Penumbra",  
     "image_avatar":"",
@@ -34,5 +34,5 @@
     "wrist":"nothing",
     "legs":"nothing",
     "feets":"nothing" 
-    }
+    }}
 ]
