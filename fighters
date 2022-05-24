@@ -3,21 +3,18 @@
    "id":"911",
     "name":"Penumbra",  
     "image_avatar":"",
-    "isBusy":"false",
-    
+    "isBusy":"false",    
     "hpMax":"50",
     "hpNow":"50",
     "level":"0",
     "experience":"0",
-    "coins":"10"
-    
+    "coins":"10",    
     "head":"nothing",
     "torso":"nothing",
     "shoulders":"nothing",
     "forearm":"nothing",
     "wrist":"nothing",
     "legs":"nothing",
-    "feets":"nothing"
- 
+    "feets":"nothing" 
   }
 ]
